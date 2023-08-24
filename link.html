@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link</title>
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            border: 1px solid darkcyan;
+            background-color: darkcyan;
+            color: white;
+            width: 100px;
+            padding: 3px;
+            margin-left: 30px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .card {
+            width: 200px;
+            box-shadow: 2px 2px 2px black;
+            padding: 5px;
+            margin: 20px;
+        }
+        .card-img {
+            width: 100%;
+            height: 150px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .card:target {
+            background-color: darkcyan;
+            color: white;
+            font-size: 25px;
+            width: 350px;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#kid's">kid's</a></li>
+            <li><a href="#men">men</a></li>
+            <li><a href="#women">women</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card" id="women">
+            <img src="images/women fashion.jpg" class="card-img">
+            <div class="card-header">
+                <h2>women fashion</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>url</li>
+                    <li>java</li>
+                    <li>css</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="men">
+            <img src="images/men fashion.jpg" class="card-img">
+            <div class="card-header">
+            <h2>men fashion</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>html</li>
+                    <li>net</li>
+                    <li>facebook</li>
+                </ol>
+            </div>
+        </div>
+        <div class="card" id="kid's">
+            <img src="images/kids fashion.jpg" class="card-img">
+            <div class="card-header">
+                <h2>kid's fashion</h2>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>none</li>
+                    <li>whatapp</li>
+                    <li>terms</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

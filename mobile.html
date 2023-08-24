@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile</title>
+    <style>
+        section {
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+        nav div {
+            border: 2px solid blue;
+            margin-bottom: 20px;
+            width: 100px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
+        .bi-youtube {
+            font-size: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div>
+                <a href="images/mobile 1.jpg" target="previewframe">
+                    <img src="images/mobile 1.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/embed/Zak0XAGVm4c" target="previewframe">
+                    <span class="bi bi-youtube"></span>
+                    <p>video-1</p>
+                </a>
+            </div>
+            <div>
+                <a href="images/mobile 2.jpg" target="previewframe">
+                    <img src="images/mobile 2.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div>
+                <a href="images/mobile 3.jpg" target="previewframe">
+                    <img src="images/mobile 3.jpg" width="100" height="100">
+                </a>
+            </div>
+            <div>
+                <a href="images/mobile 4.jpg" target="previewframe">
+                    <img src="images/mobile 4.jpg" width="100" height="100">
+                </a>
+            </div>
+        </nav>
+        <main>
+            <iframe name="previewframe" src="images/mobile 1.jpg"></iframe>
+        </main>
+    </section>
+</body>
+</html>
